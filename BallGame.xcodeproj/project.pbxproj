@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B70B71C31B7AAAFC005DBB97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71C21B7AAAFC005DBB97 /* AudioToolbox.framework */; };
+		B70B71C51B7AAB01005DBB97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71C41B7AAB01005DBB97 /* AVFoundation.framework */; };
+		B70B71C71B7AAB0A005DBB97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71C61B7AAB0A005DBB97 /* CoreGraphics.framework */; };
+		B70B71CB1B7AAB21005DBB97 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71CA1B7AAB21005DBB97 /* CoreTelephony.framework */; };
+		B70B71CD1B7AAB35005DBB97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71CC1B7AAB35005DBB97 /* SystemConfiguration.framework */; };
+		B70B71D21B7AAB55005DBB97 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71D01B7AAB55005DBB97 /* EventKit.framework */; };
+		B70B71D31B7AAB55005DBB97 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71D11B7AAB55005DBB97 /* EventKitUI.framework */; };
+		B70B71D51B7AAB6B005DBB97 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71D41B7AAB6B005DBB97 /* AdSupport.framework */; };
+		B70B71D71B7AAB72005DBB97 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71D61B7AAB72005DBB97 /* MessageUI.framework */; };
+		B70B71E71B7BC2C0005DBB97 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71E61B7BC2C0005DBB97 /* StoreKit.framework */; };
+		B70B71E91B7BC2C2005DBB97 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B71E81B7BC2C2005DBB97 /* GameKit.framework */; };
+		B74C086C1B7550410088D3A1 /* cash.wav in Resources */ = {isa = PBXBuildFile; fileRef = B74C08691B7550410088D3A1 /* cash.wav */; };
+		B74C086E1B7550410088D3A1 /* swoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = B74C086B1B7550410088D3A1 /* swoosh.wav */; };
+		B74C08701B7554D80088D3A1 /* gun1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B74C086F1B7554D80088D3A1 /* gun1.mp3 */; };
+		B74C08721B755B500088D3A1 /* endgame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B74C08711B755B500088D3A1 /* endgame.mp3 */; };
+		B74C08761B7584D90088D3A1 /* electric.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B74C08751B7584D90088D3A1 /* electric.mp3 */; };
+		B76E53CF1B6FEE92009BA2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E53CE1B6FEE92009BA2AD /* AppDelegate.swift */; };
+		B76E53D11B6FEE92009BA2AD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B76E53D01B6FEE92009BA2AD /* GameScene.sks */; };
+		B76E53D31B6FEE92009BA2AD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E53D21B6FEE92009BA2AD /* GameScene.swift */; };
+		B76E53D51B6FEE92009BA2AD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E53D41B6FEE92009BA2AD /* GameViewController.swift */; };
+		B76E53D81B6FEE92009BA2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76E53D61B6FEE92009BA2AD /* Main.storyboard */; };
+		B76E53DA1B6FEE92009BA2AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76E53D91B6FEE92009BA2AD /* Images.xcassets */; };
+		B76E53DD1B6FEE92009BA2AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E53DB1B6FEE92009BA2AD /* LaunchScreen.xib */; };
+		B76E53E91B6FEE92009BA2AD /* BallGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E53E81B6FEE92009BA2AD /* BallGameTests.swift */; };
+		B76E53F31B706DC1009BA2AD /* funky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B76E53F21B706DC1009BA2AD /* funky.mp3 */; };
+		B76E53F51B706DD5009BA2AD /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E53F41B706DD5009BA2AD /* square.png */; };
+		B76E53FF1B70703E009BA2AD /* jungleside.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E53FE1B70703E009BA2AD /* jungleside.png */; };
+		B76E54101B728822009BA2AD /* blueball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E540B1B728822009BA2AD /* blueball.png */; };
+		B76E54111B728822009BA2AD /* greenball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E540C1B728822009BA2AD /* greenball.png */; };
+		B76E54121B728822009BA2AD /* redball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E540D1B728822009BA2AD /* redball.png */; };
+		B76E54151B7292CF009BA2AD /* junglevert.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E54141B7292CF009BA2AD /* junglevert.png */; };
+		B76E54251B73F007009BA2AD /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E54241B73F007009BA2AD /* GameOverScene.swift */; };
+		B76E542B1B73FA03009BA2AD /* woodbox.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E542A1B73FA03009BA2AD /* woodbox.png */; };
+		B76E542D1B73FFD9009BA2AD /* whiteball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E542C1B73FFD9009BA2AD /* whiteball.png */; };
+		B76E54311B746ED8009BA2AD /* blackball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E542E1B746ED8009BA2AD /* blackball.png */; };
+		B76E54321B746ED8009BA2AD /* brownball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E542F1B746ED8009BA2AD /* brownball.png */; };
+		B76E54351B747093009BA2AD /* purpleball.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E54341B747093009BA2AD /* purpleball.png */; };
+		B76E54391B7473C6009BA2AD /* bigbox.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E54371B7473C6009BA2AD /* bigbox.png */; };
+		B76E543D1B751DE4009BA2AD /* woodstack.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E543C1B751DE4009BA2AD /* woodstack.png */; };
+		B76E54411B751EC1009BA2AD /* bigred.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E543F1B751EC1009BA2AD /* bigred.png */; };
+		B76E54431B751F36009BA2AD /* biggreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E54421B751F36009BA2AD /* biggreen.png */; };
+		B76E54471B752515009BA2AD /* ball_black.png in Resources */ = {isa = PBXBuildFile; fileRef = B76E54461B752515009BA2AD /* ball_black.png */; };
+		B78B8F191C3756220072222E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78B8F171C3755B20072222E /* GoogleMobileAds.framework */; };
+		B7CEE4CC1B7D532100038E78 /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CEE4CB1B7D532100038E78 /* playbutton.png */; };
+		B7CEE4D21B7D686600038E78 /* leader.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CEE4D11B7D686600038E78 /* leader.png */; };
+		B7D040661B7BD060006C4DF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D040651B7BD060006C4DF3 /* UIKit.framework */; };
+		B7D040681B7BD540006C4DF3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D040671B7BD540006C4DF3 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B76E53E31B6FEE92009BA2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B76E53C11B6FEE92009BA2AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76E53C81B6FEE92009BA2AD;
+			remoteInfo = BallGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B70B71C21B7AAAFC005DBB97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B70B71C41B7AAB01005DBB97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B70B71C61B7AAB0A005DBB97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B70B71CA1B7AAB21005DBB97 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B70B71CC1B7AAB35005DBB97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B70B71D01B7AAB55005DBB97 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B70B71D11B7AAB55005DBB97 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		B70B71D41B7AAB6B005DBB97 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B70B71D61B7AAB72005DBB97 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B70B71E61B7BC2C0005DBB97 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B70B71E81B7BC2C2005DBB97 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B74C08691B7550410088D3A1 /* cash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cash.wav; sourceTree = "<group>"; };
+		B74C086B1B7550410088D3A1 /* swoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swoosh.wav; sourceTree = "<group>"; };
+		B74C086F1B7554D80088D3A1 /* gun1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gun1.mp3; sourceTree = "<group>"; };
+		B74C08711B755B500088D3A1 /* endgame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = endgame.mp3; sourceTree = "<group>"; };
+		B74C08751B7584D90088D3A1 /* electric.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = electric.mp3; sourceTree = "<group>"; };
+		B76E53C91B6FEE92009BA2AD /* BallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76E53CD1B6FEE92009BA2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76E53CE1B6FEE92009BA2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B76E53D01B6FEE92009BA2AD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B76E53D21B6FEE92009BA2AD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B76E53D41B6FEE92009BA2AD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B76E53D71B6FEE92009BA2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B76E53D91B6FEE92009BA2AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B76E53DC1B6FEE92009BA2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B76E53E21B6FEE92009BA2AD /* BallGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76E53E71B6FEE92009BA2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76E53E81B6FEE92009BA2AD /* BallGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallGameTests.swift; sourceTree = "<group>"; };
+		B76E53F21B706DC1009BA2AD /* funky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funky.mp3; sourceTree = "<group>"; };
+		B76E53F41B706DD5009BA2AD /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		B76E53FE1B70703E009BA2AD /* jungleside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jungleside.png; sourceTree = "<group>"; };
+		B76E540B1B728822009BA2AD /* blueball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueball.png; sourceTree = "<group>"; };
+		B76E540C1B728822009BA2AD /* greenball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenball.png; sourceTree = "<group>"; };
+		B76E540D1B728822009BA2AD /* redball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redball.png; sourceTree = "<group>"; };
+		B76E54141B7292CF009BA2AD /* junglevert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = junglevert.png; sourceTree = "<group>"; };
+		B76E54241B73F007009BA2AD /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = ../GameOverScene.swift; sourceTree = "<group>"; };
+		B76E542A1B73FA03009BA2AD /* woodbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodbox.png; sourceTree = "<group>"; };
+		B76E542C1B73FFD9009BA2AD /* whiteball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteball.png; sourceTree = "<group>"; };
+		B76E542E1B746ED8009BA2AD /* blackball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackball.png; sourceTree = "<group>"; };
+		B76E542F1B746ED8009BA2AD /* brownball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brownball.png; sourceTree = "<group>"; };
+		B76E54341B747093009BA2AD /* purpleball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleball.png; sourceTree = "<group>"; };
+		B76E54371B7473C6009BA2AD /* bigbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigbox.png; sourceTree = "<group>"; };
+		B76E543C1B751DE4009BA2AD /* woodstack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodstack.png; sourceTree = "<group>"; };
+		B76E543F1B751EC1009BA2AD /* bigred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigred.png; sourceTree = "<group>"; };
+		B76E54421B751F36009BA2AD /* biggreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biggreen.png; sourceTree = "<group>"; };
+		B76E54461B752515009BA2AD /* ball_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_black.png; sourceTree = "<group>"; };
+		B78B8F171C3755B20072222E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "/Users/Binh/Documents/BallGame/../../Downloads/GoogleMobileAdsSdkiOS-7.6.0/GoogleMobileAds.framework"; sourceTree = "<absolute>"; };
+		B7CEE4CB1B7D532100038E78 /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		B7CEE4D11B7D686600038E78 /* leader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leader.png; sourceTree = "<group>"; };
+		B7D040651B7BD060006C4DF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B7D040671B7BD540006C4DF3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B76E53C61B6FEE92009BA2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78B8F191C3756220072222E /* GoogleMobileAds.framework in Frameworks */,
+				B7D040681B7BD540006C4DF3 /* CoreMedia.framework in Frameworks */,
+				B7D040661B7BD060006C4DF3 /* UIKit.framework in Frameworks */,
+				B70B71D71B7AAB72005DBB97 /* MessageUI.framework in Frameworks */,
+				B70B71D51B7AAB6B005DBB97 /* AdSupport.framework in Frameworks */,
+				B70B71D21B7AAB55005DBB97 /* EventKit.framework in Frameworks */,
+				B70B71E91B7BC2C2005DBB97 /* GameKit.framework in Frameworks */,
+				B70B71D31B7AAB55005DBB97 /* EventKitUI.framework in Frameworks */,
+				B70B71CD1B7AAB35005DBB97 /* SystemConfiguration.framework in Frameworks */,
+				B70B71CB1B7AAB21005DBB97 /* CoreTelephony.framework in Frameworks */,
+				B70B71C71B7AAB0A005DBB97 /* CoreGraphics.framework in Frameworks */,
+				B70B71C51B7AAB01005DBB97 /* AVFoundation.framework in Frameworks */,
+				B70B71C31B7AAAFC005DBB97 /* AudioToolbox.framework in Frameworks */,
+				B70B71E71B7BC2C0005DBB97 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E53DF1B6FEE92009BA2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B76E53C01B6FEE92009BA2AD = {
+			isa = PBXGroup;
+			children = (
+				B78B8F171C3755B20072222E /* GoogleMobileAds.framework */,
+				B7CEE4D11B7D686600038E78 /* leader.png */,
+				B7CEE4CB1B7D532100038E78 /* playbutton.png */,
+				B7D040671B7BD540006C4DF3 /* CoreMedia.framework */,
+				B7D040651B7BD060006C4DF3 /* UIKit.framework */,
+				B70B71E81B7BC2C2005DBB97 /* GameKit.framework */,
+				B70B71E61B7BC2C0005DBB97 /* StoreKit.framework */,
+				B70B71D61B7AAB72005DBB97 /* MessageUI.framework */,
+				B70B71D41B7AAB6B005DBB97 /* AdSupport.framework */,
+				B70B71D01B7AAB55005DBB97 /* EventKit.framework */,
+				B70B71D11B7AAB55005DBB97 /* EventKitUI.framework */,
+				B70B71CC1B7AAB35005DBB97 /* SystemConfiguration.framework */,
+				B70B71CA1B7AAB21005DBB97 /* CoreTelephony.framework */,
+				B70B71C61B7AAB0A005DBB97 /* CoreGraphics.framework */,
+				B70B71C41B7AAB01005DBB97 /* AVFoundation.framework */,
+				B70B71C21B7AAAFC005DBB97 /* AudioToolbox.framework */,
+				B74C08751B7584D90088D3A1 /* electric.mp3 */,
+				B74C08711B755B500088D3A1 /* endgame.mp3 */,
+				B74C086F1B7554D80088D3A1 /* gun1.mp3 */,
+				B74C08691B7550410088D3A1 /* cash.wav */,
+				B74C086B1B7550410088D3A1 /* swoosh.wav */,
+				B76E54461B752515009BA2AD /* ball_black.png */,
+				B76E54421B751F36009BA2AD /* biggreen.png */,
+				B76E543F1B751EC1009BA2AD /* bigred.png */,
+				B76E543C1B751DE4009BA2AD /* woodstack.png */,
+				B76E54371B7473C6009BA2AD /* bigbox.png */,
+				B76E54341B747093009BA2AD /* purpleball.png */,
+				B76E540B1B728822009BA2AD /* blueball.png */,
+				B76E542E1B746ED8009BA2AD /* blackball.png */,
+				B76E542F1B746ED8009BA2AD /* brownball.png */,
+				B76E542C1B73FFD9009BA2AD /* whiteball.png */,
+				B76E542A1B73FA03009BA2AD /* woodbox.png */,
+				B76E54141B7292CF009BA2AD /* junglevert.png */,
+				B76E540C1B728822009BA2AD /* greenball.png */,
+				B76E540D1B728822009BA2AD /* redball.png */,
+				B76E53FE1B70703E009BA2AD /* jungleside.png */,
+				B76E53F41B706DD5009BA2AD /* square.png */,
+				B76E53F21B706DC1009BA2AD /* funky.mp3 */,
+				B76E53CB1B6FEE92009BA2AD /* BallGame */,
+				B76E53E51B6FEE92009BA2AD /* BallGameTests */,
+				B76E53CA1B6FEE92009BA2AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B76E53CA1B6FEE92009BA2AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B76E53C91B6FEE92009BA2AD /* BallGame.app */,
+				B76E53E21B6FEE92009BA2AD /* BallGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B76E53CB1B6FEE92009BA2AD /* BallGame */ = {
+			isa = PBXGroup;
+			children = (
+				B76E53CE1B6FEE92009BA2AD /* AppDelegate.swift */,
+				B76E53D01B6FEE92009BA2AD /* GameScene.sks */,
+				B76E53D21B6FEE92009BA2AD /* GameScene.swift */,
+				B76E53D41B6FEE92009BA2AD /* GameViewController.swift */,
+				B76E54241B73F007009BA2AD /* GameOverScene.swift */,
+				B76E53D61B6FEE92009BA2AD /* Main.storyboard */,
+				B76E53D91B6FEE92009BA2AD /* Images.xcassets */,
+				B76E53DB1B6FEE92009BA2AD /* LaunchScreen.xib */,
+				B76E53CC1B6FEE92009BA2AD /* Supporting Files */,
+			);
+			path = BallGame;
+			sourceTree = "<group>";
+		};
+		B76E53CC1B6FEE92009BA2AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76E53CD1B6FEE92009BA2AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B76E53E51B6FEE92009BA2AD /* BallGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				B76E53E81B6FEE92009BA2AD /* BallGameTests.swift */,
+				B76E53E61B6FEE92009BA2AD /* Supporting Files */,
+			);
+			path = BallGameTests;
+			sourceTree = "<group>";
+		};
+		B76E53E61B6FEE92009BA2AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76E53E71B6FEE92009BA2AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B76E53C81B6FEE92009BA2AD /* BallGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B76E53EC1B6FEE92009BA2AD /* Build configuration list for PBXNativeTarget "BallGame" */;
+			buildPhases = (
+				B76E53C51B6FEE92009BA2AD /* Sources */,
+				B76E53C61B6FEE92009BA2AD /* Frameworks */,
+				B76E53C71B6FEE92009BA2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallGame;
+			productName = BallGame;
+			productReference = B76E53C91B6FEE92009BA2AD /* BallGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B76E53E11B6FEE92009BA2AD /* BallGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B76E53EF1B6FEE92009BA2AD /* Build configuration list for PBXNativeTarget "BallGameTests" */;
+			buildPhases = (
+				B76E53DE1B6FEE92009BA2AD /* Sources */,
+				B76E53DF1B6FEE92009BA2AD /* Frameworks */,
+				B76E53E01B6FEE92009BA2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B76E53E41B6FEE92009BA2AD /* PBXTargetDependency */,
+			);
+			name = BallGameTests;
+			productName = BallGameTests;
+			productReference = B76E53E21B6FEE92009BA2AD /* BallGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B76E53C11B6FEE92009BA2AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Binh Le";
+				TargetAttributes = {
+					B76E53C81B6FEE92009BA2AD = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 82E7X2395K;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					B76E53E11B6FEE92009BA2AD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B76E53C81B6FEE92009BA2AD;
+					};
+				};
+			};
+			buildConfigurationList = B76E53C41B6FEE92009BA2AD /* Build configuration list for PBXProject "BallGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B76E53C01B6FEE92009BA2AD;
+			productRefGroup = B76E53CA1B6FEE92009BA2AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B76E53C81B6FEE92009BA2AD /* BallGame */,
+				B76E53E11B6FEE92009BA2AD /* BallGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B76E53C71B6FEE92009BA2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CEE4D21B7D686600038E78 /* leader.png in Resources */,
+				B7CEE4CC1B7D532100038E78 /* playbutton.png in Resources */,
+				B74C08761B7584D90088D3A1 /* electric.mp3 in Resources */,
+				B74C08721B755B500088D3A1 /* endgame.mp3 in Resources */,
+				B74C08701B7554D80088D3A1 /* gun1.mp3 in Resources */,
+				B74C086C1B7550410088D3A1 /* cash.wav in Resources */,
+				B74C086E1B7550410088D3A1 /* swoosh.wav in Resources */,
+				B76E54471B752515009BA2AD /* ball_black.png in Resources */,
+				B76E54431B751F36009BA2AD /* biggreen.png in Resources */,
+				B76E54411B751EC1009BA2AD /* bigred.png in Resources */,
+				B76E543D1B751DE4009BA2AD /* woodstack.png in Resources */,
+				B76E54391B7473C6009BA2AD /* bigbox.png in Resources */,
+				B76E54351B747093009BA2AD /* purpleball.png in Resources */,
+				B76E54311B746ED8009BA2AD /* blackball.png in Resources */,
+				B76E54321B746ED8009BA2AD /* brownball.png in Resources */,
+				B76E542D1B73FFD9009BA2AD /* whiteball.png in Resources */,
+				B76E542B1B73FA03009BA2AD /* woodbox.png in Resources */,
+				B76E54151B7292CF009BA2AD /* junglevert.png in Resources */,
+				B76E54101B728822009BA2AD /* blueball.png in Resources */,
+				B76E54111B728822009BA2AD /* greenball.png in Resources */,
+				B76E54121B728822009BA2AD /* redball.png in Resources */,
+				B76E53FF1B70703E009BA2AD /* jungleside.png in Resources */,
+				B76E53F51B706DD5009BA2AD /* square.png in Resources */,
+				B76E53F31B706DC1009BA2AD /* funky.mp3 in Resources */,
+				B76E53DD1B6FEE92009BA2AD /* LaunchScreen.xib in Resources */,
+				B76E53DA1B6FEE92009BA2AD /* Images.xcassets in Resources */,
+				B76E53D11B6FEE92009BA2AD /* GameScene.sks in Resources */,
+				B76E53D81B6FEE92009BA2AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E53E01B6FEE92009BA2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B76E53C51B6FEE92009BA2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E53D31B6FEE92009BA2AD /* GameScene.swift in Sources */,
+				B76E53D51B6FEE92009BA2AD /* GameViewController.swift in Sources */,
+				B76E54251B73F007009BA2AD /* GameOverScene.swift in Sources */,
+				B76E53CF1B6FEE92009BA2AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E53DE1B6FEE92009BA2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E53E91B6FEE92009BA2AD /* BallGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B76E53E41B6FEE92009BA2AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B76E53C81B6FEE92009BA2AD /* BallGame */;
+			targetProxy = B76E53E31B6FEE92009BA2AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B76E53D61B6FEE92009BA2AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B76E53D71B6FEE92009BA2AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B76E53DB1B6FEE92009BA2AD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B76E53DC1B6FEE92009BA2AD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B76E53EA1B6FEE92009BA2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B76E53EB1B6FEE92009BA2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B76E53ED1B6FEE92009BA2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "/Users/Binh/Documents/BallGame/../../Downloads/GoogleMobileAdsSdkiOS-7.6.0/GoogleMobileAds.framework";
+				INFOPLIST_FILE = BallGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BinhLe.TropicRush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B76E53EE1B6FEE92009BA2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "/Users/Binh/Documents/BallGame/../../Downloads/GoogleMobileAdsSdkiOS-7.6.0/GoogleMobileAds.framework";
+				INFOPLIST_FILE = BallGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BinhLe.TropicRush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B76E53F01B6FEE92009BA2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BallGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BinhLe.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		B76E53F11B6FEE92009BA2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BallGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BinhLe.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B76E53C41B6FEE92009BA2AD /* Build configuration list for PBXProject "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E53EA1B6FEE92009BA2AD /* Debug */,
+				B76E53EB1B6FEE92009BA2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B76E53EC1B6FEE92009BA2AD /* Build configuration list for PBXNativeTarget "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E53ED1B6FEE92009BA2AD /* Debug */,
+				B76E53EE1B6FEE92009BA2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B76E53EF1B6FEE92009BA2AD /* Build configuration list for PBXNativeTarget "BallGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E53F01B6FEE92009BA2AD /* Debug */,
+				B76E53F11B6FEE92009BA2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B76E53C11B6FEE92009BA2AD /* Project object */;
+}

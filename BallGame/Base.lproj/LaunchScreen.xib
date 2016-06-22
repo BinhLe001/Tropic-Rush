@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Developers" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="140" y="215" width="200.5" height="49"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="41"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mZ-1S-uk1">
+                    <rect key="frame" x="165" y="120" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="dvS-kI-3E9"/>
+                        <constraint firstAttribute="height" constant="150" id="ftV-0q-xy7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="46"/>
+                    <state key="normal" title="Le" backgroundImage="square.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2015 Binh Le. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="77.5" y="442" width="327" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="13m-Gc-8rp"/>
+                <constraint firstAttribute="centerY" secondItem="kId-c2-rCX" secondAttribute="centerY" id="4cS-jZ-omQ"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="4gT-2k-suh"/>
+                <constraint firstItem="7mZ-1S-uk1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="8IC-ka-RAl"/>
+                <constraint firstAttribute="centerX" secondItem="7mZ-1S-uk1" secondAttribute="centerX" id="A4C-ae-UnH"/>
+                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="m6t-lv-ho5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="square.png" width="512" height="512"/>
+    </resources>
+</document>
